@@ -1,10 +1,226 @@
-.App {
-  text-align: center;
+:root{
+  --screaming-green: #55ff4d;
+  --madang: #bbffb8;
+  --royal-blue: #3772ff;
+  --neutral-white: #ffffff;
+  --mercury: #e7e7e7;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0px;
+  height: 100vh;
+  max-height: 100vh;
+
+}
+
+header{
+  background-color: var(--screaming-green);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+h1{
+  margin: 0px;;
+  font-size: 32px;
+}
+
+h2{
+  margin: 0px;
+}
+
+h3{
+  margin: 0px;
+}
+
+.modal-bg{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal{
+  width: 80%;
+  height: fit-content;
+  border-radius: 8px;
+  background-color: var(--mercury);
+  padding: 100px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+.report-form{
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.report-form form{
+  width: 100%;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-info-logout{
+  display: flex;
+  align-items: center;
+}
+
+.user-info{
+  font-size: 18px;
+}
+
+.user-info p{
+  margin: 0px;
+}
+
+.logout-icon{
+  margin-left: 50px;
+  font-size: 40px;
+}
+
+#root{
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  max-height: 100%;
+  align-items: stretch;
+}
+
+.content {
+  display: flex;
+  height: 100%;
+  align-items: stretch;
+  flex: 1;
+  min-height: 0;
+}
+
+.info-and-btn-wrapper{
+  width: 30%;
+  background-color: var(--mercury);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info{
+  font-size: 16px;
+}
+
+.info-and-btn-wrapper .btn-wrapper{
+  align-self: center;
+  justify-self: center;
+  margin: auto;
+}
+
+.info-and-btn-wrapper .btn-wrapper button{
+  background-color: var(--royal-blue);
+  border: none;
+  border-radius: 8px;
+  color: var(--neutral-white);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 30px;
+}
+
+.info-and-btn-wrapper .btn-wrapper button:hover{
+  cursor: pointer;
+  background-color: #7772ff;
+}
+
+.report-list{
+  width: 70%;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.report-form form{
+  display: flex;
+  flex-direction: column;
+}
+
+.report-form form .field{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+.report-form .input{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 8px;
+  border: solid 2px #a7a7a7;
+  margin-top: 5px;
+}
+
+.report-form .input:focus{
+  border: 2px solid var(--royal-blue);
+  outline: none;
+}
+
+.report-form textarea{
+  resize: none;
+  min-height: 150px;
+}
+
+.report-form input[type=submit]{
+  background-color: var(--royal-blue);
+  border: none;
+  border-radius: 8px;
+  color: var(--neutral-white);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.report-form input[type=submit]:hover{
+  cursor: pointer;
+  background-color: #7772ff;
+} 
+
+.report{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--madang);
+  padding: 10px 10px;
+  margin: 10px 0px;
+  align-items: flex-start;
+  border-radius: 8px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.delete-btn{
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-size: 16px;
+  align-self: flex-end;
+}
+
+.delete-btn:hover{
+  cursor: pointer;
 }
 
 @media (prefers-reduced-motion: no-preference) {
