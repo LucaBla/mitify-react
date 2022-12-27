@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/mitify-react/static/css/main.ab269a7d.css",
+    "main.js": "/mitify-react/static/js/main.dd7b20a5.js",
+    "static/js/787.938b4640.chunk.js": "/mitify-react/static/js/787.938b4640.chunk.js",
+    "static/media/logo.svg": "/mitify-react/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/mitify-react/index.html",
+    "main.ab269a7d.css.map": "/mitify-react/static/css/main.ab269a7d.css.map",
+    "main.dd7b20a5.js.map": "/mitify-react/static/js/main.dd7b20a5.js.map",
+    "787.938b4640.chunk.js.map": "/mitify-react/static/js/787.938b4640.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab269a7d.css",
+    "static/js/main.dd7b20a5.js"
+  ]
+}
